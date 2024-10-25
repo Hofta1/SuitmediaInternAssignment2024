@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_marginTop="116sp"
+        android:layout_width="116sp"
+        android:layout_height="116sp"
+        android:contentDescription="profile"
+        app:srcCompat="@drawable/ic_photo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nameET"
+        android:layout_width="310sp"
+        android:layout_height="41sp"
+        android:layout_marginTop="51sp"
+        android:background="@drawable/rounded_background"
+        android:fontFamily="@font/poppins"
+        android:hint="Name"
+        android:paddingHorizontal="16sp"
+        android:textColorHint="@color/hint_text" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/palindromeET"
+        android:layout_width="310sp"
+        android:layout_height="41sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/rounded_background"
+        android:fontFamily="@font/poppins"
+        android:hint="Palindrome"
+        android:paddingHorizontal="16sp"
+        android:textColorHint="@color/hint_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/checkBtn"
+        android:layout_marginTop="45sp"
+        android:layout_width="310sp"
+        android:layout_height="41sp"
+        android:background="@drawable/rounded_button"
+        android:text="CHECK"
+        android:textSize="14sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextBtn"
+        android:layout_marginTop="15sp"
+        android:layout_width="310sp"
+        android:layout_height="41sp"
+        android:background="@drawable/rounded_button"
+        android:text="NEXT"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/dialogTV"
+        android:background="@drawable/rounded_background"
+        android:paddingHorizontal="16sp"
+        android:paddingVertical="8sp"
+        android:layout_marginTop="60sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>

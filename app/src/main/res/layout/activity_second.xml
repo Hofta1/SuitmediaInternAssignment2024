@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title=" "
+        >
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_marginStart="12sp"
+            android:background="@drawable/back"
+            android:contentDescription="back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="11sp"
+            android:text="Second Screen"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"/>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_marginTop="13sp"
+        android:layout_marginStart="21sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:textSize="12sp"
+        android:text="Welcome"/>
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21sp"
+        android:textSize="18sp"
+        android:text="John Doe"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/usernameTV"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="500sp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:text="Selected User Name"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chooseBtn"
+        android:layout_width="310sp"
+        android:layout_height="41sp"
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:text="Choose a User"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+</LinearLayout>
